@@ -53,7 +53,7 @@
 
             <h5>Ejemplo:</h5>
 
-            <div class="row row-cols-lg-auto g-3 align-items-center">
+            <!-- <div class="row row-cols-lg-auto g-3 align-items-center">
                 <div class="col-12">
                     <label class="visually-hidden" for="inlineFormInputGroupUsername">Dimensión del array</label>
                     <div class="input-group">
@@ -63,27 +63,69 @@
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary">Generar</button>
                 </div>
+            </div> -->
+
+
+
+            <div class="row my-4 row-cols-auto">
+                <?php
+                $array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+                foreach ($array as $value) {
+                    echo "<div class='col text-center border'>$value</div>";
+                }
+                ?>
             </div>
-
-
-            <div class="container">
-                <div class="row my-4 row-cols-auto">
-                    <?php
-                    $array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-                    foreach ($array as $value) {
-                        echo "<div class='col text-center border'>$value</div>";
-                    }
-                    ?>
-                </div>
-                <div class="code-snippet">
-                    <pre>
-                        <code>$array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+            <div class="code-snippet">
+                <pre>
+                    <code>$array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
                         foreach ($array as $value) {                            
                         }
-                        </code>
-                    </pre>
-                </div>
+                    </code>
+                </pre>
             </div>
+
+            <h1>Array Multidimensional</h1>
+
+            <p> También conocida como matriz que contiene una o más arrays. PHP admite matrices multidimensionales que tienen dos o más niveles de profundidad. Sin embargo, las matrices de más de tres niveles de profundidad.</p>
+            <small class="text-right "><a href="https://www.php.net/manual/es/language.types.array.php">fuente</a></small>
+
+            <h5>Ejemplo:</h5>
+
+
+            <?php
+            $cars = array(
+                array("Volvo", "Nissan", "Renault"),
+                array("BMW", "Chevrolet", "Toyota"),
+                array("Saab", "Land Rover", "Mercedes"),
+            );
+
+            foreach ($cars as $car) {
+                echo "<div class='row row-cols-6'>";
+                foreach ($car as $item) {
+                    echo "<div class='col text-center border' style='width: 120px;'>" . $item . "</div>";
+                }
+                echo "</div>";
+            }
+            ?>
+
+            <div class="code-snippet">
+                <pre>
+                    <code>
+                    $cars = array(
+                        array("Volvo", "Nissan", "Renault"),
+                        array("BMW", "Chevrolet", "Toyota"),
+                        array("Saab", "Land Rover", "Mercedes"),
+                    );
+
+                    foreach ($cars as $car) {               
+                        foreach ($car as $item) {
+                            
+                        }                
+                    }
+                    </code>
+                </pre>
+            </div>
+
         </section>
     </main>
 
