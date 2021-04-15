@@ -1,0 +1,10 @@
+# docker-compose.yml
+version: "3.7"
+services:
+  webapp:
+    build:
+      context: .
+    ports:
+      - "8000:80"
+    volumes:
+      - ./src:/var/www/html
