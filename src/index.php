@@ -68,15 +68,13 @@
 
                             <img src="/images/array.jpg" class="bd-placeholder-img card-img-top" alt="array-image" style="height:225px;">
                             <div class="card-body">
-                                <p class="card-text"> Estructura de control, funciones, arrays o matrices, funciones de
-                                    cadenas.
+                                <p class="card-text"> Estructura de control, funciones, arrays o matrices, funciones de cadenas.
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
                                         <a href="arrays/view.php" role="button" class="btn btn-sm btn-outline-secondary">View</a>
-                                        <a href="arrays/code.php" role="button" class="btn btn-sm btn-outline-secondary">Code</a>
+                                        <a href="arrays/code.php" role="button" class="btn btn-sm btn-outline-secondary">Demo</a>
                                     </div>
-                                    <small class="text-muted">9 mins</small>
                                 </div>
                             </div>
                         </div>

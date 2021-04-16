@@ -45,6 +45,12 @@
     </header>
 
     <main>
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="/">Back to Home</a>
+            </p>
+
+        </div>
         <section class="py-5 container">
             <h1>Array</h1>
 
@@ -53,30 +59,16 @@
 
             <h5>Ejemplo:</h5>
 
-            <!-- <div class="row row-cols-lg-auto g-3 align-items-center">
-                <div class="col-12">
-                    <label class="visually-hidden" for="inlineFormInputGroupUsername">Dimensión del array</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Dimensión del array">
-                    </div>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Generar</button>
-                </div>
-            </div> -->
-
-
-
             <div class="row my-4 row-cols-auto">
                 <?php
                 $array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
                 foreach ($array as $value) {
-                    echo "<div class='col text-center border'>$value</div>";
+                    echo "<div class='col text-center border border-secondary'>$value</div>";
                 }
                 ?>
             </div>
             <div class="code-snippet">
-                <pre>
+                <pre lang="php">
                     <code>$array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
                         foreach ($array as $value) {                            
                         }
@@ -102,14 +94,14 @@
             foreach ($cars as $car) {
                 echo "<div class='row row-cols-6'>";
                 foreach ($car as $item) {
-                    echo "<div class='col text-center border' style='width: 120px;'>" . $item . "</div>";
+                    echo "<div class='col text-center border border-secondary' style='width: 120px;'>" . $item . "</div>";
                 }
                 echo "</div>";
             }
             ?>
 
             <div class="code-snippet">
-                <pre>
+                <pre lang="php">
                     <code>
                     $cars = array(
                         array("Volvo", "Nissan", "Renault"),
@@ -126,13 +118,14 @@
                 </pre>
             </div>
 
+          
         </section>
     </main>
 
     <footer class="text-muted py-5">
         <div class="container">
             <p class="float-end mb-1">
-                <a href="#">Back to top</a>
+                <a href="/">Back to Home</a>
             </p>
             <p class="mb-1">Murphy Horta Camargo</p>
             <p class="mb-0"><a href="https://www.unir.net/">https://www.unir.net/</a> </p>
